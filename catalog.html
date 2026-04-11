@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог мебели — диваны, кресла, столы, стулья, кровати, шкафы. Фильтр по категории и цене.">
+  <title>Каталог — Магазин Мебели</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Магазин Мебели</a>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html" class="active">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-icon theme-toggle" title="Тёмная тема">☾</button>
+        <a href="cart.html" class="btn-icon" style="position:relative;" title="Корзина">
+          🛒
+          <span class="cart-count"></span>
+        </a>
+      </div>
+      <button class="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">О нас</a>
+    <a href="contact.html">Контакты</a>
+    <a href="cart.html">Корзина</a>
+  </div>
+
+  <main>
+    <!-- HERO КАТАЛОГА -->
+    <div class="catalog-hero">
+      <h1>Каталог мебели</h1>
+      <p>15 моделей в 6 категориях. Найдите идеальное для вашего интерьера.</p>
+    </div>
+
+    <div class="container">
+      <div class="catalog-layout">
+
+        <!-- ===== БОКОВАЯ ПАНЕЛЬ ФИЛЬТРОВ ===== -->
+        <aside class="filters-sidebar">
+          <div class="filters-title">
+            Фильтры
+            <button class="filter-reset" onclick="resetFilters()">Сбросить</button>
+          </div>
+
+          <!-- Поиск -->
+          <div class="filter-section">
+            <h4>Поиск</h4>
+            <input type="search" class="search-input" id="search-input" placeholder="Название товара..." oninput="applyFilters()">
+          </div>
+
+          <!-- Категории -->
+          <div class="filter-section">
+            <h4>Категория</h4>
+            <div class="category-list" id="category-list">
+              <!-- Кнопки генерируются через JS -->
+            </div>
+          </div>
+
+          <!-- Цена -->
+          <div class="filter-section">
+            <h4>Цена (₽)</h4>
+            <div class="price-inputs">
+              <input type="number" class="price-input" id="price-min" placeholder="от" value="0">
+              <input type="number" class="price-input" id="price-max" placeholder="до" value="200000">
+            </div>
+            <input type="range" class="price-range" id="price-range" min="0" max="200000" value="200000"
+              oninput="document.getElementById('price-max').value = this.value; applyFilters()">
+            <button class="apply-price" onclick="applyFilters()">Применить</button>
+          </div>
+
+          <!-- Наличие -->
+          <div class="filter-section">
+            <h4>Наличие</h4>
+            <label style="display:flex;align-items:center;gap:0.5rem;cursor:pointer;font-size:0.9rem;">
+              <input type="checkbox" id="in-stock-only" onchange="applyFilters()" style="accent-color:var(--accent);">
+              Только в наличии
+            </label>
+          </div>
+        </aside>
+
+        <!-- ===== ОСНОВНАЯ ЧАСТЬ ===== -->
+        <div>
+          <!-- Панель управления -->
+          <div class="catalog-topbar">
+            <span class="catalog-count" id="catalog-count">Найдено: 15 товаров</span>
+            <select class="catalog-sort" id="sort-select" onchange="applyFilters()">
+              <option value="default">По умолчанию</option>
+              <option value="price-asc">Цена: по возрастанию</option>
+              <option value="price-desc">Цена: по убыванию</option>
+              <option value="rating">По рейтингу</option>
+              <option value="name">По названию</option>
+            </select>
+          </div>
+
+          <!-- Сетка товаров -->
+          <div class="products-grid" id="products-grid">
+            <!-- Карточки генерируются через JS -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">Магазин Мебели</span>
+          <p>Создаём красоту для вашего дома с 2010 года.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="catalog.html">Диваны</a></li>
+            <li><a href="catalog.html">Кресла</a></li>
+            <li><a href="catalog.html">Столы</a></li>
+            <li><a href="catalog.html">Кровати</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Компания</h4>
+          <ul>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="about.html">Доставка</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="tel:+78001234567">8 800 123-45-67</a></li>
+            <li><a href="mailto:info@mebel-store.ru">info@mebel-store.ru</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Магазин Мебели.</span>
+        <span>HTML5 · CSS3 · JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // ---- Состояние фильтров ----
+    let activeCategory = 'Все';
+
+    // ---- Кнопки категорий ----
+    function renderCategoryButtons() {
+      const counts = getCategoryCounts();
+      const html = CATEGORIES.map(cat => `
+        <button class="category-btn ${cat === activeCategory ? 'active' : ''}"
+          onclick="setCategory('${cat}')">
+          ${cat}
+          <span class="category-count">${counts[cat]}</span>
+        </button>
+      `).join('');
+      document.getElementById('category-list').innerHTML = html;
+    }
+
+    function setCategory(cat) {
+      activeCategory = cat;
+      renderCategoryButtons();
+      applyFilters();
+    }
+
+    // ---- Применить фильтры ----
+    function applyFilters() {
+      const search = document.getElementById('search-input').value.toLowerCase().trim();
+      const minPrice = parseInt(document.getElementById('price-min').value) || 0;
+      const maxPrice = parseInt(document.getElementById('price-max').value) || 999999;
+      const sortVal = document.getElementById('sort-select').value;
+      const onlyInStock = document.getElementById('in-stock-only').checked;
+
+      let filtered = PRODUCTS.filter(p => {
+        const matchCat = activeCategory === 'Все' || p.category === activeCategory;
+        const matchSearch = !search || p.name.toLowerCase().includes(search) || p.category.toLowerCase().includes(search);
+        const matchPrice = p.price >= minPrice && p.price <= maxPrice;
+        const matchStock = !onlyInStock || p.inStock;
+        return matchCat && matchSearch && matchPrice && matchStock;
+      });
+
+      // Сортировка
+      if (sortVal === 'price-asc') filtered.sort((a, b) => a.price - b.price);
+      else if (sortVal === 'price-desc') filtered.sort((a, b) => b.price - a.price);
+      else if (sortVal === 'rating') filtered.sort((a, b) => b.rating - a.rating);
+      else if (sortVal === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name, 'ru'));
+
+      // Обновление счётчика
+      document.getElementById('catalog-count').textContent = `Найдено: ${filtered.length} товаров`;
+
+      // Рендеринг
+      const grid = document.getElementById('products-grid');
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="no-results"><h3>Ничего не найдено</h3><p>Попробуйте изменить параметры фильтра</p></div>`;
+      } else {
+        grid.innerHTML = filtered.map(createProductCard).join('');
+        setTimeout(initScrollAnimations, 50);
+      }
+    }
+
+    // ---- Сброс фильтров ----
+    function resetFilters() {
+      activeCategory = 'Все';
+      document.getElementById('search-input').value = '';
+      document.getElementById('price-min').value = 0;
+      document.getElementById('price-max').value = 200000;
+      document.getElementById('price-range').value = 200000;
+      document.getElementById('sort-select').value = 'default';
+      document.getElementById('in-stock-only').checked = false;
+      renderCategoryButtons();
+      applyFilters();
+    }
+
+    // ---- Инициализация ----
+    // Проверяем параметр категории из URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const catParam = urlParams.get('category');
+    if (catParam && CATEGORIES.includes(catParam)) {
+      activeCategory = catParam;
+    }
+
+    renderCategoryButtons();
+    applyFilters();
+  </script>
+</body>
+</html>
