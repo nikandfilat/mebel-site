@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="О компании Магазин Мебели — история, команда, доставка и гарантия.">
+  <title>О нас — Магазин Мебели</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Магазин Мебели</a>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html" class="active">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-icon theme-toggle" title="Тёмная тема">☾</button>
+        <a href="cart.html" class="btn-icon" style="position:relative;" title="Корзина">
+          🛒
+          <span class="cart-count"></span>
+        </a>
+      </div>
+      <button class="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">О нас</a>
+    <a href="contact.html">Контакты</a>
+    <a href="cart.html">Корзина</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <div class="about-hero">
+      <h1>О нашем магазине</h1>
+      <p>Более 15 лет мы создаём мебель, которая превращает дом в место силы, красоты и ежедневного комфорта</p>
+    </div>
+
+    <!-- ИСТОРИЯ -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1100&q=85" alt="Современный мебельный шоурум" loading="lazy">
+          </div>
+          <div class="about-text">
+            <span class="section-label">Наша история</span>
+            <h2>С 2010 года — создаём красоту</h2>
+            <p>Всё началось с небольшой мастерской в Москве, где несколько мастеров создавали мебель на заказ. Сегодня «Магазин Мебели» — это современное производство площадью более 5000 м², оснащённое передовым оборудованием.</p>
+            <p>Мы убеждены, что каждый человек заслуживает красивого дома. Поэтому сочетаем европейское качество материалов с российским мастерством и доступными ценами.</p>
+            <p>Каждое изделие проходит многоэтапный контроль качества и сопровождается сертификатом происхождения. Мы несём ответственность за каждый диван, стул и шкаф, который выходит из наших цехов.</p>
+            <p>Наш подход простой: мебель должна выглядеть дорого, служить долго и быть удобной каждый день. Поэтому мы тестируем ткани на износ, проверяем фурнитуру на тысячи циклов открывания и работаем только с поставщиками, которые подтверждают качество материалов документами.</p>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Лет на рынке</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">12 000+</span>
+                <span class="stat-label">Довольных клиентов</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Моделей в каталоге</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-values">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Философия</span>
+          <h2>Не просто мебель, а готовые интерьерные решения</h2>
+          <p>Мы помогаем создать цельный образ комнаты: от дивана и стола до оттенка ткани, размера ковра и сценария освещения.</p>
+        </div>
+        <div class="values-grid">
+          <div class="value-card">
+            <span>01</span>
+            <h3>Индивидуальный подбор</h3>
+            <p>Учитываем планировку, освещение, стиль ремонта и привычки семьи. Если нужно — адаптируем размеры и материалы.</p>
+          </div>
+          <div class="value-card">
+            <span>02</span>
+            <h3>Контроль качества</h3>
+            <p>Проверяем каркас, швы, фурнитуру, упаковку и внешний вид до отправки клиенту.</p>
+          </div>
+          <div class="value-card">
+            <span>03</span>
+            <h3>Сервис после покупки</h3>
+            <p>Помогаем с уходом, гарантийными вопросами, доставкой, сборкой и повторным подбором мебели.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Процесс</span>
+          <h2>Как проходит заказ</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item"><strong>1. Консультация</strong><p>Вы выбираете модель или отправляете фото интерьера, а мы предлагаем подходящие решения.</p></div>
+          <div class="timeline-item"><strong>2. Подбор материалов</strong><p>Согласовываем ткань, цвет, габариты, комплектацию и сроки.</p></div>
+          <div class="timeline-item"><strong>3. Производство и проверка</strong><p>Мебель проходит контроль качества и бережно упаковывается.</p></div>
+          <div class="timeline-item"><strong>4. Доставка и сборка</strong><p>Привозим заказ, поднимаем на этаж и устанавливаем в нужном месте.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОМАНДА -->
+    <section class="section" style="background:var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Люди</span>
+          <h2>Наша команда</h2>
+          <p>Профессионалы, которые вкладывают душу в каждое изделие</p>
+        </div>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">АК</div>
+            <div class="team-name">Александр Кузнецов</div>
+            <div class="team-role">Основатель и генеральный директор</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">МС</div>
+            <div class="team-name">Мария Соколова</div>
+            <div class="team-role">Главный дизайнер</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">ДВ</div>
+            <div class="team-name">Дмитрий Воронов</div>
+            <div class="team-role">Руководитель производства</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">ЕП</div>
+            <div class="team-name">Елена Петрова</div>
+            <div class="team-role">Директор по качеству</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showroom-section" id="showroom-map">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Шоурум</span>
+          <h2>Приезжайте посмотреть мебель вживую</h2>
+          <p>Москва, ул. Лесная, 12. Нажмите на карту, чтобы открыть её в полном размере и построить маршрут.</p>
+        </div>
+        <div class="showroom-layout">
+          <div class="showroom-card">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85" alt="Шоурум мебели" loading="lazy">
+            <div>
+              <h3>Что есть в шоуруме</h3>
+              <p>Образцы тканей, выставочные модели диванов, кресел, кроватей и столов, консультация дизайнера и зона подбора материалов.</p>
+              <ul>
+                <li>Пн–Пт: 9:00–20:00</li>
+                <li>Сб–Вс: 10:00–18:00</li>
+                <li>Телефон: 8 800 123-45-67</li>
+              </ul>
+            </div>
+          </div>
+          <div class="map-card">
+            <a class="map-preview" href="https://yandex.ru/maps/?ll=37.589600%2C55.779800&z=16&pt=37.589600,55.779800,pm2rdm" target="_blank" rel="noopener" aria-label="Открыть карту шоурума">
+              <span class="map-tile-grid">
+                <img src="https://tile.openstreetmap.org/15/19804/10238.png" alt="">
+                <img src="https://tile.openstreetmap.org/15/19805/10238.png" alt="">
+                <img src="https://tile.openstreetmap.org/15/19806/10238.png" alt="">
+                <img src="https://tile.openstreetmap.org/15/19804/10239.png" alt="">
+                <img src="https://tile.openstreetmap.org/15/19805/10239.png" alt="">
+                <img src="https://tile.openstreetmap.org/15/19806/10239.png" alt="">
+                <img src="https://tile.openstreetmap.org/15/19804/10240.png" alt="">
+                <img src="https://tile.openstreetmap.org/15/19805/10240.png" alt="">
+                <img src="https://tile.openstreetmap.org/15/19806/10240.png" alt="">
+              </span>
+              <span class="map-marker">Магазин Мебели<br><small>ул. Лесная, 12</small></span>
+            </a>
+            <a href="https://yandex.ru/maps/?ll=37.589600%2C55.779800&z=16&pt=37.589600,55.779800,pm2rdm" target="_blank" rel="noopener">Открыть большую карту</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ДОСТАВКА -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Условия</span>
+          <h2>Доставка и сборка</h2>
+          <p>Сделаем всё, чтобы мебель оказалась в вашем доме в идеальном состоянии</p>
+        </div>
+        <div class="delivery-grid">
+          <div class="delivery-card">
+            <div class="delivery-icon">🚚</div>
+            <h3>Доставка по России</h3>
+            <p>Доставляем во все регионы. По Москве и МО — от 2 дней, по России — от 5 до 14 дней в зависимости от региона.</p>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon">🔧</div>
+            <h3>Бесплатная сборка</h3>
+            <p>Наши мастера соберут и установят мебель в удобное для вас время. Услуга включена в стоимость для Москвы и МО.</p>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon">🛡</div>
+            <h3>Гарантия 5 лет</h3>
+            <p>Каждое изделие защищено 5-летней гарантией. При выявлении дефекта — ремонт или замена за наш счёт.</p>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon">↩</div>
+            <h3>Возврат 30 дней</h3>
+            <p>Если товар не подошёл по любой причине — примем назад в течение 30 дней и вернём полную стоимость.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕРТИФИКАТЫ -->
+    <section class="section" style="background:var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Качество</span>
+          <h2>Сертификаты и стандарты</h2>
+          <p>Наша мебель соответствует всем российским и международным стандартам качества</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.75rem;text-align:center;">
+            <div style="font-size:2.2rem;margin-bottom:0.75rem;">📋</div>
+            <h3 style="font-size:1rem;margin-bottom:0.4rem;">ГОСТ Р</h3>
+            <p style="font-size:0.85rem;color:var(--text-secondary);">Соответствие всем российским стандартам для мебельной продукции</p>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.75rem;text-align:center;">
+            <div style="font-size:2.2rem;margin-bottom:0.75rem;">🌿</div>
+            <h3 style="font-size:1rem;margin-bottom:0.4rem;">Экологичность</h3>
+            <p style="font-size:0.85rem;color:var(--text-secondary);">Все материалы безопасны для здоровья и имеют экологические сертификаты</p>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.75rem;text-align:center;">
+            <div style="font-size:2.2rem;margin-bottom:0.75rem;">🏆</div>
+            <h3 style="font-size:1rem;margin-bottom:0.4rem;">ISO 9001</h3>
+            <p style="font-size:0.85rem;color:var(--text-secondary);">Международная система менеджмента качества производственных процессов</p>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.75rem;text-align:center;">
+            <div style="font-size:2.2rem;margin-bottom:0.75rem;">⭐</div>
+            <h3 style="font-size:1rem;margin-bottom:0.4rem;">Лучший продавец 2024</h3>
+            <p style="font-size:0.85rem;color:var(--text-secondary);">Награда рейтинга «Лучшие мебельные магазины России» третий год подряд</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="background:linear-gradient(135deg,var(--accent),var(--accent-dark));padding:4rem 2rem;text-align:center;">
+      <div style="max-width:520px;margin:0 auto;">
+        <h2 style="color:#fff;margin-bottom:0.75rem;">Готовы выбрать мебель?</h2>
+        <p style="color:rgba(255,255,255,0.85);margin-bottom:2rem;">Перейдите в каталог и найдите идеальные предметы для вашего интерьера</p>
+        <a href="catalog.html" class="btn btn-light">Открыть каталог</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">Магазин Мебели</span>
+          <p>Создаём красоту для вашего дома с 2010 года.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="catalog.html">Все товары</a></li>
+            <li><a href="catalog.html">Диваны</a></li>
+            <li><a href="catalog.html">Кресла</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Компания</h4>
+          <ul>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="about.html">Доставка</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="tel:+78001234567">8 800 123-45-67</a></li>
+            <li><a href="mailto:info@mebel-store.ru">info@mebel-store.ru</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Магазин Мебели.</span>
+        <span>HTML5 · CSS3 · JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
