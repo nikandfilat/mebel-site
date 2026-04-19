@@ -44,7 +44,7 @@ const ICONS = {
 
 const PRODUCT_PHOTOS = {
   1: "https://cdn2.divan.ru/img/v1/_oVejLxiGe3QfvKehOKdAs6K8JC2oyU0QC0GIeVxEfc/pd:0:0:0:0/rs:fill:1268:840:1:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQxNzUwMDcuanBn.jpg",
-  2: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=85",
+  2: "https://avatars.mds.yandex.net/get-mpic/15250760/2a00000198341a5c6a40809f268d01a88588/orig",
   3: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85",
   4: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?auto=format&fit=crop&w=900&q=85",
   5: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85",
