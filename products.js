@@ -55,7 +55,7 @@ const PRODUCT_PHOTOS = {
   10: "https://avatars.mds.yandex.net/i?id=8c46c6b896b3becbc1dc0463e2c1775d_l-5698344-images-thumbs&n=13",
   11: "https://cs2.livemaster.ru/storage/80/79/270b6ca686aab79e7d02f59bf0wr--dlya-doma-i-interera-krovat-iz-massiva-dereva-duba-na-zakaz-p.jpg",
   12: "https://avatars.mds.yandex.net/i?id=62af68e28743f900eeaf0ece571642b1_l-12536664-images-thumbs&n=13",
-  13: "https://www.trio.ru/upload/iblock/081/iomh7tc0kmuxf513b2r2hodf7ey4rh8o.jpg",
+  13: "https://avatars.mds.yandex.net/i?id=3f074ff52e9beba0089003796b196773_l-12004727-images-thumbs&n=13",
   14: "https://main-cdn.sbermegamarket.ru/big2/hlr-system/-14/078/990/287/182/22/600011553688b1.jpeg",
   15: "https://www.1magazinmebeli.ru/wp-content/uploads/Bolshoy-stol-Titan-200h100-sm-steklo-ili-keramika-.jpg"
 };
