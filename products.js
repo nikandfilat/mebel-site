@@ -57,7 +57,7 @@ const PRODUCT_PHOTOS = {
   12: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=85",
   13: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=85",
   14: "https://images.unsplash.com/photo-1601366533287-5ee4c763ae4e?auto=format&fit=crop&w=900&q=85",
-  15: "https://unsplash.com/photos/a-glass-table-with-four-chairs-around-it-GGTfjkrL-rU"
+  15: "https://images.unsplash.com/photo-1721614663945-05af24728c6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 };
 
 const PRODUCTS = [
