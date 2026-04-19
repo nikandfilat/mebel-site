@@ -101,6 +101,10 @@
     <script src="products.js"></script>
     <script src="script.js"></script>
     <script>
+      let activeDiscount = 0;
+      let activePromoCode = "";
+      let promoMessage = "";
+      let promoIsError = false;
       // ---- РЕНДЕРИНГ КОРЗИНЫ ----
       function renderCart() {
         const cart = getCart();
@@ -164,6 +168,7 @@
           </div>
 
           <!-- Итого -->
+          <!-- Итого -->
           <div class="cart-summary">
             <h3>Итого</h3>
             <div class="summary-row">
@@ -174,6 +179,16 @@
               <span>Доставка</span>
               <span>${delivery === 0 ? '<span style="color:var(--success)">Бесплатно</span>' : formatPrice(delivery)}</span>
             </div>
+            ${
+              discount > 0
+                ? `
+            <div class="summary-row" style="color:var(--success);font-weight:700;">
+              <span>Скидка по промокоду</span>
+              <span>−${formatPrice(discount)}</span>
+            </div>
+            `
+                : ""
+            }
             ${
               delivery > 0
                 ? `
@@ -188,12 +203,45 @@
               <span class="price">${formatPrice(total)}</span>
             </div>
 
+          // <div class="cart-summary">
+          //   <h3>Итого</h3>
+          //   <div class="summary-row">
+          //     <span>Товары (${totalItems} шт.)</span>
+          //     <span>${formatPrice(subtotal)}</span>
+          //   </div>
+          //   <div class="summary-row">
+          //     <span>Доставка</span>
+          //     <span>${delivery === 0 ? '<span style="color:var(--success)">Бесплатно</span>' : formatPrice(delivery)}</span>
+          //   </div>
+          //   ${
+          //     delivery > 0
+          //       ? `
+          //     <div style="font-size:0.78rem;color:var(--text-muted);margin-top:-0.5rem;margin-bottom:0.5rem;">
+          //       Бесплатная доставка от ${formatPrice(30000)}
+          //     </div>
+          //   `
+          //       : ""
+          //   }
+          //   <div class="summary-row total">
+          //     <span>К оплате</span>
+          //     <span class="price">${formatPrice(total)}</span>
+          //   </div>
+            
+
             <!-- Промокод -->
             <div style="margin-top:1.25rem;display:flex;gap:0.5rem;">
-              <input type="text" class="form-input" id="promo-input" placeholder="Промокод" style="flex:1;padding:0.6rem 0.85rem;font-size:0.85rem;">
+              <input type="text" class="form-input" id="promo-input" placeholder="Промокод" value="${activePromoCode}" style="flex:1;padding:0.6rem 0.85rem;font-size:0.85rem;">
               <button onclick="applyPromo()" style="padding:0.6rem 1rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:0.85rem;font-weight:600;cursor:pointer;white-space:nowrap;">Применить</button>
             </div>
-            <div id="promo-result" style="margin-top:0.5rem;font-size:0.8rem;display:none;"></div>
+            <div id="promo-result" style="margin-top:0.5rem;font-size:0.8rem;display:${promoMessage ? "block" : "none"};color:${promoIsError ? "var(--error)" : "var(--success)"};">
+              ${promoMessage}
+            </div>
+            
+            // <div style="margin-top:1.25rem;display:flex;gap:0.5rem;">
+            //   <input type="text" class="form-input" id="promo-input" placeholder="Промокод" style="flex:1;padding:0.6rem 0.85rem;font-size:0.85rem;">
+            //   <button onclick="applyPromo()" style="padding:0.6rem 1rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:0.85rem;font-weight:600;cursor:pointer;white-space:nowrap;">Применить</button>
+            // </div>
+            // <div id="promo-result" style="margin-top:0.5rem;font-size:0.8rem;display:none;"></div>
 
             <div class="order-contact">
               <h4>Контакты для связи</h4>
@@ -261,22 +309,49 @@
           .getElementById("promo-input")
           .value.trim()
           .toUpperCase();
-        const result = document.getElementById("promo-result");
-        result.style.display = "block";
         if (code === "НОВЫЙ2025") {
-          result.style.color = "var(--success)";
-          result.textContent = "Промокод применён! Скидка 15%";
+          activeDiscount = 0.15;
+          activePromoCode = code;
+          promoMessage = "Промокод применён! Скидка 15%";
+          promoIsError = false;
+          renderCart();
+          showToast("Промокод применён: скидка 15%", "success");
         } else if (code === "") {
-          result.style.color = "var(--error)";
-          result.textContent = "Введите промокод";
+          activeDiscount = 0;
+          activePromoCode = "";
+          promoMessage = "Введите промокод";
+          promoIsError = true;
+          renderCart();
         } else {
-          result.style.color = "var(--error)";
-          result.textContent = "Промокод не найден или истёк";
+          activeDiscount = 0;
+          activePromoCode = "";
+          promoMessage = "Промокод не найден или истёк";
+          promoIsError = true;
+          renderCart();
+          showToast("Промокод не найден или истёк", "error");
         }
       }
+      // function applyPromo() {
+      //   const code = document
+      //     .getElementById("promo-input")
+      //     .value.trim()
+      //     .toUpperCase();
+      //   const result = document.getElementById("promo-result");
+      //   result.style.display = "block";
+      //   if (code === "НОВЫЙ2025") {
+      //     result.style.color = "var(--success)";
+      //     result.textContent = "Промокод применён! Скидка 15%";
+      //   } else if (code === "") {
+      //     result.style.color = "var(--error)";
+      //     result.textContent = "Введите промокод";
+      //   } else {
+      //     result.style.color = "var(--error)";
+      //     result.textContent = "Промокод не найден или истёк";
+      //   }
+      // }
 
       // Оформить заказ
-      function handleCheckout() {
+       function handleCheckout() {
         const phone = document.getElementById("customer-phone").value.trim();
         const email = document.getElementById("customer-email").value.trim();
         const error = document.getElementById("order-contact-error");
@@ -295,9 +370,36 @@
           "success",
         );
         localStorage.removeItem("cart");
+        activeDiscount = 0;
+        activePromoCode = "";
+        promoMessage = "";
+        promoIsError = false;
         updateCartCount();
         setTimeout(() => renderCart(), 2000);
       }
+
+      // function handleCheckout() {
+      //   const phone = document.getElementById("customer-phone").value.trim();
+      //   const email = document.getElementById("customer-email").value.trim();
+      //   const error = document.getElementById("order-contact-error");
+      //   const phoneOk = /^[\d\s\+\-\(\)]{10,}$/.test(phone);
+      //   const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+      //   if (!phoneOk && !emailOk) {
+      //     error.classList.add("show");
+      //     showToast("Оставьте телефон или почту для связи", "error");
+      //     return;
+      //   }
+
+      //   error.classList.remove("show");
+      //   showToast(
+      //     "Заказ оформлен! Мы свяжемся с вами в течение часа.",
+      //     "success",
+      //   );
+      //   localStorage.removeItem("cart");
+      //   updateCartCount();
+      //   setTimeout(() => renderCart(), 2000);
+      // }
 
       // ---- Инициализация ----
       renderCart();
