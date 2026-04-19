@@ -53,9 +53,9 @@ const PRODUCT_PHOTOS = {
   8: "https://cdn.nonton.ru/iblock/bd2/bd2771f79ad069c62eaf236ea254245c/Nils_kreslo_Velutto_56_02.jpeg",
   9: "https://img.spim.ru/i/tile_trim4x/img.mebhome.ru/for_miss/auto/for_miss_707745_1_0_-1.jpg",
   10: "https://avatars.mds.yandex.net/i?id=8c46c6b896b3becbc1dc0463e2c1775d_l-5698344-images-thumbs&n=13",
-  11: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=85",
-  12: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=85",
-  13: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=85",
+  11: "https://cs2.livemaster.ru/storage/80/79/270b6ca686aab79e7d02f59bf0wr--dlya-doma-i-interera-krovat-iz-massiva-dereva-duba-na-zakaz-p.jpg",
+  12: "https://avatars.mds.yandex.net/i?id=62af68e28743f900eeaf0ece571642b1_l-12536664-images-thumbs&n=13",
+  13: "https://www.trio.ru/upload/iblock/081/iomh7tc0kmuxf513b2r2hodf7ey4rh8o.jpg",
   14: "https://images.unsplash.com/photo-1601366533287-5ee4c763ae4e?auto=format&fit=crop&w=900&q=85",
   15: "https://images.unsplash.com/photo-1721614663945-05af24728c6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 };
@@ -248,7 +248,7 @@ const PRODUCTS = [
     price: 79900,
     material: "Натуральная кожа, дерево",
     dimensions: "260×100×88 см",
-    color: "Серый",
+    color: "Черный",
     description: "Диван из натуральной итальянской кожи. Механизм трансформации позволяет разложить его в полноценное спальное место. Ящик для хранения постельных принадлежностей в основании.",
     rating: 4.9,
     reviews: 186,
