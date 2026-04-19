@@ -45,7 +45,7 @@ const ICONS = {
 const PRODUCT_PHOTOS = {
   1: "https://cdn2.divan.ru/img/v1/_oVejLxiGe3QfvKehOKdAs6K8JC2oyU0QC0GIeVxEfc/pd:0:0:0:0/rs:fill:1268:840:1:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQxNzUwMDcuanBn.jpg",
   2: "https://avatars.mds.yandex.net/get-mpic/15250760/2a00000198341a5c6a40809f268d01a88588/orig",
-  3: "https://lifemebel.ru/photo/stoly/dlya_kuhni/derevyannye/derevyannyy_stol_miramar_mdi_dt_mrm_14_shpon_orekha_f_chernyy_matovyy_lak_240kh109kh75/derevyannyy_stol_miramar_mdi_dt_mrm_14_shpon_orekha_f_chernyy_matovyy_lak_240kh109kh75_997_660_1_0_5253168.jpg",
+  3: "https://ir.ozone.ru/s3/multimedia-9/6206710425.jpg",
   4: "https://meb-legko.ru/upload/iblock/07d/xqrnaeaazvi4u0ghs3ps3s9x9wn2kxnu.jpg",
   5: "https://hoff.ru/upload/iblock/6be/58lt1akwlx5l6q1jclc06rfn2c5lxzgj.jpg",
   6: "https://parlahost.ru/wp-content/uploads/2025/08/00113-2905817075.jpg",
