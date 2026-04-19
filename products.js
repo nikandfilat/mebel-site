@@ -56,8 +56,8 @@ const PRODUCT_PHOTOS = {
   11: "https://cs2.livemaster.ru/storage/80/79/270b6ca686aab79e7d02f59bf0wr--dlya-doma-i-interera-krovat-iz-massiva-dereva-duba-na-zakaz-p.jpg",
   12: "https://avatars.mds.yandex.net/i?id=62af68e28743f900eeaf0ece571642b1_l-12536664-images-thumbs&n=13",
   13: "https://www.trio.ru/upload/iblock/081/iomh7tc0kmuxf513b2r2hodf7ey4rh8o.jpg",
-  14: "https://images.unsplash.com/photo-1601366533287-5ee4c763ae4e?auto=format&fit=crop&w=900&q=85",
-  15: "https://images.unsplash.com/photo-1721614663945-05af24728c6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  14: "https://main-cdn.sbermegamarket.ru/big2/hlr-system/-14/078/990/287/182/22/600011553688b1.jpeg",
+  15: "https://www.1magazinmebeli.ru/wp-content/uploads/Bolshoy-stol-Titan-200h100-sm-steklo-ili-keramika-.jpg"
 };
 
 const PRODUCTS = [
@@ -263,7 +263,7 @@ const PRODUCTS = [
     price: 42100,
     material: "Шерсть, ротанг",
     dimensions: "110×90×130 см",
-    color: "Бежевый",
+    color: "Коричневый",
     description: "Подвесное кресло-кокон из натурального ротанга с мягкой шерстяной подушкой. Создаёт уютное укромное место для отдыха. Подходит для использования в помещении.",
     rating: 4.6,
     reviews: 53,
