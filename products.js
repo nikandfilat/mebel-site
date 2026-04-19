@@ -57,7 +57,7 @@ const PRODUCT_PHOTOS = {
   12: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=85",
   13: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=85",
   14: "https://images.unsplash.com/photo-1601366533287-5ee4c763ae4e?auto=format&fit=crop&w=900&q=85",
-  15: "https://shedevrum.ai/post/7fdf25ea3c0f11f184480638565e046c/"
+  15: "https://unsplash.com/photos/a-glass-table-with-four-chairs-around-it-GGTfjkrL-rU"
 };
 
 const PRODUCTS = [
