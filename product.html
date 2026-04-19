@@ -166,24 +166,6 @@
 
         <p class="product-detail-desc">${product.description}</p>
 
-      <div class="product-detail-info">
-        <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;font-weight:600;margin-bottom:0.5rem;">${product.category}</div>
-        <h1>${product.name}</h1>
-
-        <div class="product-detail-meta">
-          <div class="product-detail-price">${formatPrice(product.price)}</div>
-          <div class="in-stock ${product.inStock ? 'yes' : 'no'}">
-            ${product.inStock ? '✓ В наличии' : '✗ Нет в наличии'}
-          </div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1.5rem;">
-          <span class="stars" style="font-size:1rem;">${renderStars(product.rating)}</span>
-          <span style="font-size:0.85rem;color:var(--text-muted);">${product.rating} (${product.reviews} отзывов)</span>
-        </div>
-
-        <p class="product-detail-desc">${product.description}</p>
-
         <!-- Характеристики -->
         <div class="specs-table">
           <div class="spec-row">
