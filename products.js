@@ -43,7 +43,7 @@ const ICONS = {
 };
 
 const PRODUCT_PHOTOS = {
-  1: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85",
+  1: "https://cdn2.divan.ru/img/v1/_oVejLxiGe3QfvKehOKdAs6K8JC2oyU0QC0GIeVxEfc/pd:0:0:0:0/rs:fill:1268:840:1:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQxNzUwMDcuanBn.jpg",
   2: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=85",
   3: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85",
   4: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?auto=format&fit=crop&w=900&q=85",
